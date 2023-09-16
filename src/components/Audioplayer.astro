@@ -1,0 +1,38 @@
+---
+
+---
+<style>
+    audio::-webkit-media-controls {
+  background-color: #f7fafc;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #15f800;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+} 
+
+</style>
+<div class="container min-w-100px w-auto max-w-900 mx-auto mt-20">
+    <div class="card flex flex-col items-center bg-gradient-to-tr from-blue-50 to-red-100 text-xl font-mono p-4 rounded-md text-white" >
+        {/*
+        <div class="cover flex flex-col items-center min-w-80px w-auto max-w-880px">
+            <img src="https://yt3.googleusercontent.com/ytc/AL5GRJUlJJlZF0ig6_w5HTbFddUPlqxPu5bFN4jrXZtZ=s900-c-k-c0x00ffffff-no-rj" alt="Album Cover" class="w-3/6 rounded-xl blur-sm">
+            <p class="-translate-y-10 w-3/6 text-center break-words">If Airtel Theme Was A Song</p>
+          </div>
+        */}
+      <audio id="song" class="block w-full max-w-md mx-auto" controls>
+        <source src="./voice.mp3" type="audio/mpeg">
+        </audio>
+        <div class="mt-4">
+          <button onclick="document.getElementById('song').play()" class="bg-slate-600 px-2 mx-2 rounded-lg hover:bg-slate-800">Play</button>
+          <button onclick="document.getElementById('song').pause()" class="bg-slate-600 px-2 mx-2 rounded-lg hover:bg-slate-800">Pause</button>
+          <button onclick="document.getElementById('song').volume += 0.1" class="bg-slate-600 px-2 mx-2 rounded-lg hover:bg-slate-800">Vol +</button>
+          <button onclick="document.getElementById('song').volume -= 0.1" class="bg-slate-600 px-2 mx-2 rounded-lg hover:bg-slate-800">Vol -</button>
+        </div>
+      
+    </div>
+  </div>
