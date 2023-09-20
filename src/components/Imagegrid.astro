@@ -7,11 +7,18 @@ import Audioplayer from '../components/Audioplayer.astro'
 <div class="p-5">
    <Audioplayer></Audioplayer>
 </div>
-<div class="columns-1 sm:columns-1 md:columns-3 gap-4 ">
+<div class="columns-1 sm:columns-1 md:columns-3 gap-4 m-10 items-baseline">
     {
         data.map(({ img , alt }) => (
           <>
-          <img src={img} alt={alt} class="m-3 border shadow-md rounded-md w-full  aspect-auto" >
+            <div class="border shadow-md my-10 rounded-md">
+                <img src={img} alt={alt} class=" w-full  aspect-auto" >
+                <div class="p-1 px-3">
+                <a href={img} download class="w-full text-sm font-semibold grid grid-cols-2 justify-between"> 
+                <svg fill="#000000" width="20" height="20" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" ><title>download</title><path d="M232 64L280 64 280 214 277 270 300 242 356 189 388 221 256 353 124 221 156 189 212 242 235 270 232 214 232 64ZM64 400L448 400 448 448 64 448 64 400Z" /></svg>
+                <span></span>
+                </a></div> 
+            </div>
           </>
         ))
       }
