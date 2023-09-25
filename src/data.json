@@ -1,9 +1,11 @@
 [
     
     {"img": "./2.jpg", "alt": "img2"} ,
+    {"img": "./cr.jpg", "alt": "cr"},
     {"img": "./4.jpg", "alt": "img4"} ,
     {"img": "./3.jpg", "alt": "img3"},
     {"img": "./1.jpg", "alt": "img1"}
+    
 ]  
     
   
